@@ -20,7 +20,6 @@ export function reducer(
 			};
 		}
 		case REMOVE_TODO: {
-			console.log(action.payload);
 			const data = state.data.filter(
 				(todo) => todo.label !== action.payload.label
 			);
